@@ -10,4 +10,4 @@ set smarttab
 
 set number " Show line number
 
-set statusline=a%%f%Y%(%m%r)%=%l,%c%p%L
+set statusline=a%%f%Y%(%m%r%)%=%l,%c%p%L
