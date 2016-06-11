@@ -10,4 +10,9 @@ set smarttab
 
 set number " Show line number
 
-set statusline=a%%f%Y%(%m%r%)%=%l,%c%p%L
+" file name, space separator, file type, file status(modified or readonly),
+" center placeholder, column, line/total lines, line percentage, padding space
+set statusline=%f\ %y%(%m%r%)%=%c,%l\/%L\ %p%%\ 
+
+" Always display status line
+set laststatus=2
