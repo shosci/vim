@@ -1,0 +1,13 @@
+" Double quote leading a comment line
+
+" File type checking, plugin, indent on
+filetype plugin indent on
+
+" Smart tab
+set shiftwidth=4
+set tabstop=4
+set smarttab
+
+set number " Show line number
+
+set statusline=a%%f%Y%(%m%r)%=%l,%c%p%L
