@@ -21,5 +21,8 @@ set laststatus=2
 set backspace=indent,eol,start
 
 " find file in current directory and subdirectories
-set path=$PWD/**
+" For Linux
+" set path=$PWD/**
+" For Windows
+set path=.\**
 
