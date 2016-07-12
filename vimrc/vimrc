@@ -20,9 +20,3 @@ set laststatus=2
 " Backspace works in Insert mode (e.g. not inserting a ^?), but won't delete over line breaks, or automatically-inserted indentation, or the place where insert mode started:
 set backspace=indent,eol,start
 
-" find file in current directory and subdirectories
-" For Linux
-" set path=$PWD/**
-" For Windows
-set path=.\**
-
