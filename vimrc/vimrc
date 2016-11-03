@@ -1,10 +1,28 @@
 " Double quote leading a comment line
 
+" set script encoding
+scriptencoding = utf-8
+
+" enable pathogen - it's under ~\vimfiles\autoload - ~\vimfiles is already in
+" runtimepath, you can check it by :echo &runtimepath in any vim window
+" after this, any plugin you want to install can be extracted into a
+" subdirectory under ~\vimfiles\bundle, it will be added to rumtimepath 
+execute pathogen#infect()
+
 " File type checking, plugin, indent on
 filetype plugin indent on
 
 " enable syntax highlight
 syntax enable
+
+" install https://github.com/altercation/vim-colors-solarized
+" it's said good for eye
+if has("gui_running")
+	set background=light
+else
+	set background=dark
+endif
+colorscheme solarized
 
 " Smart tab
 set shiftwidth=4
@@ -12,10 +30,6 @@ set tabstop=4
 set smarttab
 
 set number " Show line number
-
-" file name, space separator, file type, file status(modified or readonly),
-" center placeholder, column, line/total lines, line percentage, padding space
-set statusline=%f\ %y%(%m%r%)%=\[%{&encoding}\]\ %c,%l\/%L\ %p%%\ 
 
 " Always display status line
 set laststatus=2
