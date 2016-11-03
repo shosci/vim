@@ -3,6 +3,9 @@
 " File type checking, plugin, indent on
 filetype plugin indent on
 
+" enable syntax highlight
+syntax enable
+
 " Smart tab
 set shiftwidth=4
 set tabstop=4
@@ -12,10 +15,16 @@ set number " Show line number
 
 " file name, space separator, file type, file status(modified or readonly),
 " center placeholder, column, line/total lines, line percentage, padding space
-set statusline=%f\ %y%(%m%r%)%=%c,%l\/%L\ %p%%\ 
+set statusline=%f\ %y%(%m%r%)%=\[%{&encoding}\]\ %c,%l\/%L\ %p%%\ 
 
 " Always display status line
 set laststatus=2
 
 " Backspace works in Insert mode (e.g. not inserting a ^?), but won't delete over line breaks, or automatically-inserted indentation, or the place where insert mode started:
 set backspace=indent,eol,start
+
+" GUI font, need to install Ubuntu font if not yet
+set guifont=Ubuntu\ Mono:h12
+
+" highlight cursor line
+set cursorline
