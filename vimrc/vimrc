@@ -14,6 +14,9 @@ scriptencoding = utf-8
 " > cd %USERPROFILE% & mkdir vimfiles & cd vimfiles
 " > git clone https://github.com/tpope/vim-pathogen.git
 " > mklink /D autoload vim-pathogen\autoload
+" ~/bundle is the folder where all other vim plugins to put
+" > mkdir bundle
+"
 " Enable pathogen 
 " it's under ~\vimfiles\autoload - ~\vimfiles is already in
 " runtimepath, you can check it by :echo &runtimepath in any vim window
@@ -58,4 +61,7 @@ set guifont=Ubuntu\ Mono:h12
 
 " highlight cursor line
 set cursorline
+
+" highlight matching results
+set hlsearch
 
