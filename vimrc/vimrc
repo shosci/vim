@@ -1,5 +1,10 @@
 " Double quote leading a comment line
 
+" file encoding dectection
+" http://edyfox.codecarver.org/html/vim_fileencodings_detection.html
+" using the following order to test the file's encoding, from strict to loose
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
 " set script encoding
 scriptencoding = utf-8
 
@@ -29,8 +34,10 @@ set shiftwidth=4
 set tabstop=4
 set smarttab
 
+set relativenumber " Show relative number line for quick movement
 set number " Show line number
 
+" Install plugin vim-airline
 " Always display status line
 set laststatus=2
 
@@ -42,3 +49,4 @@ set guifont=Ubuntu\ Mono:h12
 
 " highlight cursor line
 set cursorline
+
