@@ -8,7 +8,14 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 " set script encoding
 scriptencoding = utf-8
 
-" enable pathogen - it's under ~\vimfiles\autoload - ~\vimfiles is already in
+" Install pathogen
+" For windows:
+" Open a prompt cmd window, and run following cmds
+" > cd %USERPROFILE% & mkdir vimfiles & cd vimfiles
+" > git clone https://github.com/tpope/vim-pathogen.git
+" > mklink /D autoload vim-pathogen\autoload
+" Enable pathogen 
+" it's under ~\vimfiles\autoload - ~\vimfiles is already in
 " runtimepath, you can check it by :echo &runtimepath in any vim window
 " after this, any plugin you want to install can be extracted into a
 " subdirectory under ~\vimfiles\bundle, it will be added to rumtimepath 
@@ -17,11 +24,11 @@ execute pathogen#infect()
 " File type checking, plugin, indent on
 filetype plugin indent on
 
-" enable syntax highlight
+" Enable syntax highlight
 syntax enable
 
-" install https://github.com/altercation/vim-colors-solarized
-" it's said good for eye
+" Install solarized theme it's said good for eye
+" git clone https://github.com/altercation/vim-colors-solarized.git
 if has("gui_running")
 	set background=light
 else
@@ -35,9 +42,10 @@ set tabstop=4
 set smarttab
 
 set relativenumber " Show relative number line for quick movement
-set number " Show line number
+set number " Show absolute line number for current line
 
 " Install plugin vim-airline
+" git clone https://github.com/vim-airline/vim-airline.git
 " Always display status line
 set laststatus=2
 
@@ -45,6 +53,7 @@ set laststatus=2
 set backspace=indent,eol,start
 
 " GUI font, need to install Ubuntu font if not yet
+" choco install -y ubuntu.font
 set guifont=Ubuntu\ Mono:h12
 
 " highlight cursor line
