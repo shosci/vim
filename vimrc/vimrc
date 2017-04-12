@@ -65,3 +65,8 @@ set cursorline
 " highlight matching results
 set hlsearch
 
+" swp file is sometimes annoying
+if !isdirectory("$userprofile\\vimfiles\\swapfiles\\")
+    call mkdir("$userprofile\\vimfiles\\swapfiles\\", "p")
+endif
+set directory=$userprofile\vimfiles\swapfiles\\
